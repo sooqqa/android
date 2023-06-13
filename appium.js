@@ -60,8 +60,31 @@ async function runCalculatorTest() {
 
 
 
+    //Send sms to new client
+    const client_name = "Test";
+    const client_last_name = "Test";
+    const client_phone = "678446760"
 
-    // await driver.$('android=new UiSelector().text("Verify")').click();
+    // await driver.$('android=new UiSelector().text("Send message")').click();
+    // await new Promise((resolve) => setTimeout(resolve, 3000));
+    // await driver.$('android=new UiSelector().text("New contact")').click();
+    // await new Promise((resolve) => setTimeout(resolve, 3000));
+    // const first_name = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/first_name_field")');
+    // await first_name.click();
+    // await first_name.setValue(client_name);
+    // const last_name = await driver.$('android=new UiSelector().text("Last name")');
+    // await last_name.click();
+    // await last_name.setValue(client_last_name);
+    // await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/country_code_field")').click();
+
+    // await (await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/menuitem_search")')).click();
+    // await driver.$('android= new UiSelector().resourceId("com.whatsapp:id/search_src_text")').setValue('Ukraine');
+    // await new Promise((resolve) => setTimeout(resolve, 5000));
+    // const country = await driver.$('android=new UiSelector().resourceId("com.whatsapp:id/country_first_name")');
+    // await country.click();
+    // await driver.$('android=new UiSelector().text("Phone")').setValue(client_phone);
+    // await driver.$('android=new UiSelector().text("SAVE")').click();
+    //await driver.$('android=new UiSelector().description("Navigate up")').click();
 
 
     
@@ -74,7 +97,7 @@ async function runCalculatorTest() {
 
 
     //Screenshot
-    await new Promise((resolve) => setTimeout(resolve, 10000));
+    await new Promise((resolve) => setTimeout(resolve, 3000));
     executeADBCommand(`exec-out screencap -p > screenshotStep.png`);
   await driver.deleteSession();
 }
